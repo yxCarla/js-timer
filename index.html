@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Countdown timer for seconds">
+        <meta name="author" content="yxCarla">
+        <title>Countdown Timer</title>
+        <link href="style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=B612" rel="stylesheet">
+        
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <h1 id="heading">Countdown Timer</h1>
+        <div id="input">
+            <form name="form" id="form">
+                <input type="number" id="s" name="s" placeholder="Seconds">
+            </form>
+            <button id="button" onclick="checkTimer()">Set Timer</button>
+            <button id="button2" onclick="stopTimer()">Stop Timer</button>
+            <button id="button3" onclick="resetTimer()">Reset Timer</button>
+        </div>
+        <div id="timer">
+            <span>00:</span><span id="seconds">00</span>
+        </div>
+    </body>
+</html>
